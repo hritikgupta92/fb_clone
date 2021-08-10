@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+ .parent{
+    height:500px;  
+ }
+.child1{
+    background-color: RGB(57, 88, 153);
+    height:15%;
+}
+.logo{
+    width: 12%;
+    margin-left:5%
+}
+.child2{
+    background-color: #E5E9EC;
+    height:80%;
+    padding-left:35%;
+    padding-right:25%;
+    padding-top:1%;
+    padding-bottom:10%;
+   
+}
+.child3{
+    background-color: #fff;
+       height:20%
+    
+}
+.subchild1{
+    margin-top: 2%;
+    color: #E5E9EC;
+    margin-left:50%
+
+}
+#login{
+    background-color: green;
+    color: #E5E9EC;
+}
+.form{
+    
+    width:70%;
+    height: 100%;
+    border-radius: 3%;
+    background-color: #FEFCFF;
+    box-shadow:black; 
+    border-radius:2%;
+}
+ 
+.newaccount{
+    align-self: center;
+    margin-left:30%;
+    margin-top:10%;
+    padding:5%;
+    padding-left: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup{
+ background-color:green;
+ font-style:inherit ;
+ border-radius: 2%;
+ border-color:#fff ;
+
+}
+input[type=text] {
+    width: 50%;     
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  input[type=password] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+     margin: auto;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  .gender{
+      margin:auto;
+  }
+.policy{
+    margin:5px;
+}
+.signup{
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div class="parent">
+       <div class="child1" style="display: flex;">
+        <div class ="logo">
+            <img src="./facebook-old-logo-.png" width="100%" height="100%">
+        </div>
+         <div class="subchild1"> 
+            <div>
+            <a>Email:</a>
+          <input type="email" style="margin-left:29px ;">
+        </div>
+        <div>
+          <a>Password:</a>
+          <input type="password" class="password" style="border: 0ch;">
+          <button id="login">Log In</button>
+        </div>
+        </div>
+       </div>
+       <div class="child2">
+           <div class="form">
+              <div class="newaccount">
+                  <b>Create a New Account</b></div> 
+              <div style="display: flex;">
+                <div>
+                  <input type="text" placeholder="First Name" style="width: 100%;margin-left: 5px;">
+                </div>
+                <div>
+                  <input type="text" placeholder="Surname" style="width: 100%; margin-left: 25px;">
+                </div>
+              </div>
+              
+              <input type="text" placeholder="Mobile number or email address" style="width: 100%;margin: 5px;">
+              <div>
+              <input type="password" placeholder="New Password" style="margin-left:5px ;">
+            </div>
+              <div style="display: flex;">  
+              <input type="date" style="margin: 5px;">
+            </div> 
+            <div style="display: flex;" class="gender">
+                <div class="female" style="height: 100%;width:30%;">
+            <input type="radio" id="Female" name="Gender" value="Female">
+              <label for="Female">Female</label><br>
+             </div>
+             <div class="male" style="height: 100%;width:30%;">
+              <input type="radio" id="Male" name="Gender" value="Male">
+              <label for="Male">Male</label><br>
+            </div>
+            <div class="custom" style="height: 100%;width:30%;">
+              <input type="radio" id="Custom" name="Gender" value="Custom">
+              <label for="Custom">Custom</label>
+            </div>
+        </div>  
+            <div class="policy" style="font-size: small;">
+                By clicking Sign Up,you agreed to our terms,Data Policy and Cookie Policy.
+                You may recive SMS notifications from us and can opt at any time.
+            </div>
+            <div style="height: 10%; width: 100%;" >
+                <button class="signup" style="margin: auto;">Sign Up</button>
+                 </div>
+                 <div style="margin: auto;">
+                    <a style="text-align: center;">Already have a Account</a>
+                 </div> 
+        </div>   
+       </div>
+       <div class="child3">
+
+       </div>
+    </div>
+</div>
+</body>
+</html>
